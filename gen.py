@@ -11,7 +11,7 @@ print output
 lines = int(output.split()[0])
 
 # hundred times add ten lines to the file and then commit
-for i in xrange(1,101):
+for i in xrange(1,11):
   for j in xrange(lines+1,lines+101):
     lines=lines+1
     outf.write(str(lines) + ' ' + str(random.random())+'\n')
@@ -21,4 +21,4 @@ for i in xrange(1,101):
 
 outf.close()
 # finally, push the changes to the remote
-os.system('git push origin master') # should be git squash
+#os.system('git push origin master') # should be git squash
